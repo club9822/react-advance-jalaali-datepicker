@@ -253,7 +253,7 @@
             readOnly: true,
             value: inputValue,
             onClick: function onClick() {
-              _this2.setState({ openPicker: !openPicker });
+              _this2.setState({ openPicker: !openPicker,inputValue:'' });
             },
             component: inputComponent
           }),
