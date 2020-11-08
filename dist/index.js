@@ -254,6 +254,9 @@
             value: inputValue,
             onClick: function onClick() {
               _this2.setState({ openPicker: !openPicker,inputValue:'' });
+              if(_this2.props.onChange){
+                _this2.props.onChange('','')
+              }
             },
             component: inputComponent
           }),
