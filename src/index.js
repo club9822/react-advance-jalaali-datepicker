@@ -183,6 +183,9 @@ class JDatePicker extends React.Component {
           value={inputValue}
           onClick={() => {
             this.setState({ openPicker: !openPicker,inputValue:'' });
+            if(this.props.onChange){
+              this.props.onChange('','')
+            }
           }}
           component={inputComponent}
         />
